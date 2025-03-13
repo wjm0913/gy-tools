@@ -1,0 +1,5 @@
+# gy-tools
+site_name: Gy Tools
+site_url: https://gyyx.github.io/gy-tools
+theme:
+  name: material
