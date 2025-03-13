@@ -1,5 +1,7 @@
 # gy-tools
 site_name: Gy Tools
 site_url: https://gyyx.github.io/gy-tools
+repo_url: https://github.com/gyyx/gy-tools
+repo_name: "gy-tools"
 theme:
   name: material
