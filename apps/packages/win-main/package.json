@@ -1,0 +1,35 @@
+{
+  "name": "win-main",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module",
+  "main": "vite.config.js",
+  "browserslist": [
+    "Electron 29.4.0"
+  ],
+  "dependencies": {
+    "@ant-design/icons": "^5.5.1",
+    "@gy-tools/common": "workspace:@shared/common@*",
+    "ahooks": "^3.8.1",
+    "antd": "^5.21.0",
+    "dayjs": "^1.11.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@gy-tools/codelint": "workspace:@shared/codelint@*",
+    "@gy-tools/types": "workspace:@shared/types@*",
+    "@types/react": "^18.3.8",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
+    "less": "^4.2.0",
+    "vite": "^5.2.10",
+    "vite-plugin-html": "^3.2.2",
+    "vite-plugin-svg-icons": "^2.0.1"
+  }
+}

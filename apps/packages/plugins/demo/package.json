@@ -1,0 +1,9 @@
+{
+    "name": "plugin-demo1",
+    "version": "1.0.0",
+    "description": "插件的描述信息",
+    "author": "xxx",
+    "pluginName": "gytools 插件",
+    "main": "./index.html",
+    "pluginType": "ui"
+  }

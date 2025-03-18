@@ -1,0 +1,9 @@
+{
+  "extends": "./node_modules/@gy-tools/codelint/tsconfig.node.json",
+  "compilerOptions": {
+    "composite": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+  },
+  "include": ["build-config/*.js", "build-config/*.ts", "package.json"]
+}

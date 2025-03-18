@@ -1,0 +1,37 @@
+{
+  "name": "electron",
+  "main": "build-config/vite.config.ts",
+  "version": "1.3.0",
+  "scripts": {
+    "build": "vite build",
+    "pack:win:setup:x64": "node build-config/build-pack.js target=win arch=x64 type=setup",
+    "pack:win:7z:x64": "node build-config/build-pack.js target=win arch=x64 type=green",
+    "pack:mac:dmg:universal": "node build-config/build-pack.js target=mac arch=universal type=dmg",
+    "pack:mac:dmg:x64": "node build-config/build-pack.js target=mac arch=x64 type=dmg",
+    "pack:mac:dmg:arm64": "node build-config/build-pack.js target=mac arch=arm64 type=dmg",
+    "postinstall": "electron-builder install-app-deps && node build-config/dependencies-patch.js"
+  },
+  "dependencies": {
+    "@gy-tools/common": "workspace:@shared/common@*",
+    "electron-log": "^5.1.2",
+    "got": "^14.4.2",
+    "tar": "^7.4.3",
+    "tunnel": "^0.0.6"
+  },
+  "devDependencies": {
+    "@electron/notarize": "^2.5.0",
+    "@gy-tools/codelint": "workspace:@shared/codelint@*",
+    "@gy-tools/types": "workspace:@shared/types@*",
+    "@types/tunnel": "^0.0.7",
+    "dotenv": "^16.4.5",
+    "electron": "^32.2.8",
+    "electron-builder": "^26.0.0-alpha.8",
+    "electron-debug": "^3.2.0",
+    "electron-devtools-installer": "^3.2.0",
+    "electron-to-chromium": "^1.5.27",
+    "electron-updater": "^6.4.0-alpha.2",
+    "prebuild-install": "^7.1.2",
+    "vite": "^5.2.10",
+    "vite-plugin-electron": "^0.28.8"
+  }
+}

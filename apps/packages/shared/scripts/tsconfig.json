@@ -1,0 +1,17 @@
+{
+  "extends": "./node_modules/@gy-tools/codelint/tsconfig.node.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "allowJs": true,
+    "isolatedModules": true,
+    "outDir": "./dist",
+  },
+  "ts-node": {
+    // "esm": true /* ... Line to be added ... */,
+    "experimentalSpecifierResolution": "node",
+    "compilerOptions": {
+      "module": "CommonJS"
+    },
+    "include": ["**/*.d.ts", "**/*.ts", "**/*.js"],
+  }
+}

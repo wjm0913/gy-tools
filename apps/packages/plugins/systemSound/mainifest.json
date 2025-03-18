@@ -1,0 +1,14 @@
+{
+  "name": "host",
+  "displayName": "HOST工具",
+  "version": "",
+  "main": "./index.html",
+  "customApi": "./preload.js",
+  "directory": "",
+  "dataDirectory": "",
+  "installedTimestamp": 0,
+  "updatedTimestamp": 0,
+  "categories": [],
+  "tags": [],
+  "icon": ""
+}

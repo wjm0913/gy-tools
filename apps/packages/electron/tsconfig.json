@@ -1,0 +1,16 @@
+{
+  "extends": "./node_modules/@gy-tools/codelint/tsconfig.node.json",
+  "compilerOptions": {
+    "checkJs": true,
+    "outDir": "../../dist/electron",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+    },
+    "types": [
+      "@gy-tools/types"
+    ]
+  },
+  "include": ["**/*.d.ts", "**/*.ts", "**/*.js"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

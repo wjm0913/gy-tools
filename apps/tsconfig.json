@@ -1,0 +1,8 @@
+{
+  // https://github.com/tsconfig/bases#recommended-tsconfigjson
+  "extends": "./node_modules/@gy-tools/codelint/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "./dist"
+  }
+}

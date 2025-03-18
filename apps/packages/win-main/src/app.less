@@ -1,0 +1,39 @@
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  user-select: none;
+}
+
+#main {
+  flex: auto;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 0;
+}
+
+.scroll {
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  &::-webkit-scrollbar-track {
+    // border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  &::-webkit-scrollbar-thumb {
+    // border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s ease;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 0.4s ease;
+  }
+}
+

@@ -1,0 +1,26 @@
+{
+  "name": "@shared/scripts",
+  "version": "1.1.0",
+  "scripts": {
+    "pack:electron:win": "ts-node pack-electron.ts && pnpm -F electron pack:win:setup:x64",
+    "pack:electron:win:7z": "ts-node pack-electron.ts && pnpm -F electron pack:win:7z:x64",
+    "pack:electron:mac": "ts-node pack-electron.ts && pnpm -F electron pack:mac:dmg:universal",
+    "dev:electron": "ts-node dev-electron.ts",
+    "build:electron": "ts-node pack-electron.ts"
+  },
+  "devDependencies": {
+    "@gy-tools/codelint": "workspace:@shared/codelint@*",
+    "@gy-tools/types": "workspace:@shared/types@*",
+    "@gy-tools/common": "workspace:@shared/common@*",
+    "@gy-tools/electron": "workspace:electron@*",
+    "@gy-tools/win-main": "workspace:win-main@*",
+    "@types/spinnies": "^0.5.3",
+    "changelog-parser": "^3.0.1",
+    "del": "^6.1.1",
+    "picocolors": "^1.0.0",
+    "spinnies": "git+https://github.com/lyswhut/spinnies.git#233305c58694aa3b053e3ab9af9049993f918b9d",
+    "tree-kill": "^1.2.2",
+    "ts-node": "^10.9.2",
+    "vite": "^5.2.10"
+  }
+}

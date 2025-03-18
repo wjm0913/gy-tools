@@ -1,0 +1,12 @@
+{
+  // https://github.com/tsconfig/bases#recommended-tsconfigjson
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": false,
+    "outDir": "./dist",
+    "baseUrl": "./src" /* Specify the base directory to resolve non-relative module names. */
+  }
+}

@@ -1,0 +1,15 @@
+.mixin-ellipsis-1() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.mixin-ellipsis(@n: 1) {
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	word-wrap: break-word;
+	white-space: normal !important;
+	-webkit-line-clamp: @n;
+	-webkit-box-orient: vertical;
+}

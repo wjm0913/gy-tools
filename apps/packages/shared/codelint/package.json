@@ -1,0 +1,17 @@
+{
+  "name": "@shared/codelint",
+  "version": "0.1.0",
+  "devDependencies": {
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "@tsconfig/node18": "^18.2.4",
+    "@tsconfig/recommended": "^1.0.6",
+    "@typescript-eslint/parser": "^7.7.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-config-love": "^44.0.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "typescript": "^5.4.5"
+  }
+}

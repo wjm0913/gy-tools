@@ -1,0 +1,109 @@
+:global(.darwin) {
+  .container {
+    padding-top: env(titlebar-area-height, 30px);
+  }
+  .logo {
+    display: none;
+  }
+}
+
+.container {
+  height: 100%;
+  width: 23%;
+  max-width: 180px;
+  flex: none;
+  background-color: #eee;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  &.collapsed {
+    width: 68px;
+
+    .logo {
+      padding: 8px 0;
+      font-size: 16px;
+    }
+
+    .listContainer {
+      padding: 0;
+      align-items: center;
+    }
+
+    .list {
+      align-items: center;
+      gap: 5px;
+    }
+
+    .listItem {
+      padding: 0;
+      width: auto;
+      gap: 0;
+      opacity: 0.7;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    .footer {
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.logo {
+  flex: none;
+  font-size: 24px;
+  text-align: center;
+  padding: 15px 0;
+  -webkit-app-region: drag;
+}
+
+.listContainer {
+  margin-top: 10px;
+  flex: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0 15px;
+  gap: 8px;
+}
+.listHeader {
+  font-size: 12px;
+  color: #666;
+}
+
+.list {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: auto;
+}
+.listItem {
+  display: flex;
+  justify-content: flex-start;
+  height: auto;
+  padding: 3px;
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &.active {
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+}
+
+.footer {
+  flex: none;
+  padding: 15px;
+  // text-align: center;
+  display: flex;
+  gap: 5px;
+  button {
+    flex: 1;
+  }
+}

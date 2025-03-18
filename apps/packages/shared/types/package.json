@@ -1,0 +1,7 @@
+{
+  "name": "@shared/types",
+  "types": "./index.d.ts",
+  "devDependencies": {
+    "@gy-tools/codelint": "workspace:@shared/codelint@*"
+  }
+}

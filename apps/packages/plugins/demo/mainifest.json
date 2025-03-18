@@ -1,0 +1,13 @@
+{
+  "name": "demo",
+  "displayName": "验签",
+  "version": "",
+  "main": "./index.html",
+  "directory": "",
+  "dataDirectory": "",
+  "installedTimestamp": 0,
+  "updatedTimestamp": 0,
+  "categories": [],
+  "tags": [],
+  "icon": ""
+}

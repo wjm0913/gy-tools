@@ -1,0 +1,9 @@
+{
+  "extends": "./node_modules/@gy-tools/codelint/tsconfig.node.json",
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler"
+  },
+  "include": ["vite.config.js"]
+}

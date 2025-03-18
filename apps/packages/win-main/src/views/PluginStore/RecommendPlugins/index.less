@@ -1,0 +1,55 @@
+
+.recommend-plugin-wrap {
+  margin: 32px 16px;
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .list-item {
+    border-radius: 6px;
+    width: 100%;
+    height: 260px;
+    border: 1px solid #f0f0f0;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(203, 218, 236, .16);
+    background: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+
+    .back {
+      width: 100%;
+      height: 120px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      flex: none;
+    }
+
+    .name {
+      font-weight: bold;
+      margin: 8px;
+      flex: none;
+    }
+
+    .desc {
+      font-size: 12px;
+      padding: 0 8px;
+      flex: auto;
+      .mixin-ellipsis(3);
+    }
+
+    .download {
+      display: flex;
+      font-size: 14px;
+      // color: green;
+      color: #1890ff;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
+      flex: none;
+    }
+  }
+}
