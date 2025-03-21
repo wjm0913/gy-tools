@@ -58,7 +58,7 @@ export const createWindow = () => {
   const ses = session.fromPartition('persist:win-main')
 
   const preloadUrl = path.join(encodePath(__dirname), './win-main.preload.js')
-
+  console.log(preloadUrl, '-=-=-=-=-::::')
   /**
    * Initial window options
    */

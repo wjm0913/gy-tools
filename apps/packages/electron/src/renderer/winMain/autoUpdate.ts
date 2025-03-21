@@ -14,6 +14,8 @@ autoUpdater.autoDownload = false
 
 // log.info('App starting...')
 
+// 检查是否是开发模式
+const isDev = process.env.NODE_ENV === 'development'
 
 function sendStatusToWindow(text: string) {
   log.info(text)
@@ -22,6 +24,10 @@ function sendStatusToWindow(text: string) {
 let prestatus: 'downloaded' | 'downloading' | 'error' | 'checking' | 'idle' = 'idle'
 
 export const initUpdate = () => {
+  if (isDev) {
+    console.log('开发模式下禁用自动更新')
+    return
+  }
   autoUpdater.on('checking-for-update', () => {
     sendStatusToWindow('Checking for update...')
     void rendererIPC.updateInfo({
@@ -137,6 +143,10 @@ export const checkUpdate = () => {
   //   handleSendEvent({ type: WIN_MAIN_RENDERER_EVENT_NAME.update_error, info: 'failed' })
   // } else {
   autoUpdater.autoDownload = appState.appSetting['common.tryAutoUpdate']
+  if (isDev) {
+    console.log('开发模式下禁用自动更新')
+    return
+  }
   void autoUpdater.checkForUpdates()
   // }
 }
